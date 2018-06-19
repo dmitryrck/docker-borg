@@ -8,7 +8,7 @@ BORG="docker run --rm \
   -e HOME \
   -v $HOME:$HOME \
   -v /mnt/backup:/data \
-  borg borg"
+  dmitryrck/borg borg"
 
 set -xe
 

@@ -9,7 +9,7 @@ $ docker run --rm -it \
   -u $(id -u) \
   -e BORG_PASSPHRASE \
   -v /mounted-backup-dir:/data \
-  borg bash
+  dmitryrck/borg bash
 ```
 
 Before setup:
@@ -30,7 +30,7 @@ BORG="docker run --rm \
   -e HOME \
   -v $HOME:$HOME \
   -v /mnt/backup:/data \
-  borg borg"
+  dmitryrck/borg borg"
 
 $BORG create                      \
   --verbose                       \
