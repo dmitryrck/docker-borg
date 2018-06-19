@@ -28,9 +28,8 @@ BORG="docker run --rm \
   -e BORG_PASSPHRASE \
   -e BORG_REPO \
   -e HOME \
-  -u $(id -u) \
   -v $HOME:$HOME \
-  -v /run/media/dmitry/12be46e7-6660-4ee3-951e-2aea9cd21a6e:/data \
+  -v /mnt/backup:/data \
   borg borg"
 
 $BORG create                      \

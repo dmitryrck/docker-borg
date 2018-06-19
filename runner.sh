@@ -6,9 +6,8 @@ BORG="docker run --rm \
   -e BORG_PASSPHRASE \
   -e BORG_REPO \
   -e HOME \
-  -u $(id -u) \
   -v $HOME:$HOME \
-  -v /mnt/backup-drive:/data \
+  -v /mnt/backup:/data \
   borg borg"
 
 set -xe
